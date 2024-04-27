@@ -1,48 +1,40 @@
 <!DOCKTYPE html>
     <html lang="ru">
-    <head>
-        <!--Page Settings-->
+    <head>    <!--Page Settings-->
         <meta charset="UTF-8">
         <title>Главная страница</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    lg1 {
+        color: #ff0000;
+    }
+    logo {
+        color: #202020;
+    }
+    img {
+        border-radius: 5px;
+    }
+    corner {
+            background-color: #ff0000;
+            border-radius: 50px;
+        }
+        a {
+            color: #000000;
+        }
+    </style>
     </head>
     <body text="#ffffffff" bgcolor="#161616">
-        <!--Page Content-->
         <!--<br> - перенос строки. <p> - отступ-->
-        <div>
-            <font size="+3"><p align="left">
-                Всякие тесты
-            </p>
-            </font>
-        </div>
-        <input type="checkbox" id="nav-toggle" hidden>
-        <!--
-                                    Выдвижную панель размещаете ниже
-                                    флажка (checkbox), но не обязательно
-                                    непосредственно после него, например
-                                    можно и в конце страницы
-                                    -->
-        <nav class="nav">
-            <!--
-                                                    Метка с именем `id` чекбокса в `for` атрибуте
-                                                    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
-                                                    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
-                                                    См: http://timpietrusky.com/advanced-checkbox-hack
-                                                    -->
-            <label for="nav-toggle" class="nav-toggle" onclick></label>
-            <!--
-                                                    Здесь размещаете любую разметку,
-                                                    если это меню, то скорее всего неупорядоченный список <ul>
-                                                    -->
-            <h2 class="logo">
-                <a href="#"></a>
-            </h2>
-            <ul>
-                <li><a href="onas.html">О НАС</a>
-                    <li><a href="menu.html">МЕНЮ</a>
-                        <li><a href="oplata.html">ДОСТАВКА И ОПЛАТА</a>
-                            <li><a href="kontakti.html">КОНТАКТЫ</a>
-                            </ul>
-                        </nav>
-                    </body>
-                </html>
+    <div align="center"> <lg1><font size="5px">𒉭</font></lg1> <lg2><font size="+2px">Frank BIO</font></lg2> </div>
+    <div align="center"> <img src="avatar.jpg" width="200" height="200"> </div>
+    <pre>
+<lg1>ТГ:</lg1> @H8_ME.
+<lg1>Имя:</lg1> Фрэнк.
+<lg1>Возраст:</lg1> 19 лет.
+<lg1>Увлечения:</lg1> ВЕБ-Разработка.
+<lg1>Сколько в практике:</lg1> -Совсем недавно, 
+пока еще зелёный.
+    </pre>
+    <div align="right"><corner> <a href="https://t.me/H8_ME"><font size="+1px">Связаться</font></a> </corner> </div>
+    </body>
+    </html>
