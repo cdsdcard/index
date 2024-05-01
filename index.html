@@ -4,109 +4,89 @@
         <meta charset="UTF-8">
         <title>Главная страница</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="navbarstyle.css">
     <style>
+    @font-face {
+    font-family:"eng";
+    src: url("xcompany.ttf") format("truetype");
+    }
+    @font-face {
+    font-family:"ru";
+    src: url("gotic_ru.ttf") format("truetype");
+    }
+    red {
+        color: #ff0000;
+    }
+    mg {
+        margin-left:50px;
+    }
+    pre {
+        margin-top:-15px;
+    }
+    img {
+        border-radius: 5px;
+        vertical-align: middle;
+    }
+    corner {
+            background-color: #ff0000;
+            border-radius: 2px;
+        }
+        button {
+            position: relative;
+            left: 240;
+            bottom: -3;
+            appearance: none;
+            font-family: ru;
+            color: #ff0000;
+            background-color: #202020;
+            border-radius: 2px;
+            border: 0;
+            padding: 4px 8px;
+            font-size: 16px;
+        }
+        button:hover {
+        color: #161616;
+        background: #ff0000;
+        }
+        button:focus {
+        outline: none;
+        color: #161616;
+        box-shadow: 0 0 0 1px #cbd6ee;
+        }
+        a {
+            color: #000000;
+        }
+    #shadowBox {
+  border: 0px solid;
+}
+
+.rainbow {
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
     </style>
     </head>
-    <body text="#ffffffff" bgcolor="#fff" > 
+    <body text="#ffffffff" bgcolor="#161616" > 
         <!--<br> - 1 enter. <p> - 2 enter.-->
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white scrolling-navbar top-nav-collapse">
-        <div class="container px-0">
-            <!-- Brand -->
-            <a class="navbar-brand waves-effect" title="FRANK BIO">
-                 <red><font size="5px">𒉭</font></red> <gr><font face="eng" size="+2px">Frank BIO</font></gr>
-
-            </a>
-
-            <!-- Collapse -->
-            <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <!-- Left -->
-                <ul class="navbar-nav mr-auto mrMenuLeftPc">
-                    <li class="mr-2 nav-item active ">
-                        <a class="nav-link" href="/">Статьи</a>
-                    </li>
-
-                    <li class="mr-2 nav-item ">
-                        <a class="nav-link" href="/courses">Курсы</a>
-                    </li>
-
-                    <li class="mr-2 nav-item  dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Задачи
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink3">
-                            <a class="dropdown-item" href="/problems">Алгоритмические задачи</a>
-                            <a class="dropdown-item" href="/puzzles">Логические задачи</a>
-                        </div>
-                    </li>
-
-                    <li class="mr-2 nav-item ">
-                        <a class="nav-link" href="/code">Песочница</a>
-                    </li>
-
-                    <li class="mr-2 nav-item ">
-                        <a class="nav-link" href="/tests">Тесты</a>
-                    </li>
-
-                    <li class="mr-2 nav-item ">
-                        <a class="nav-link" href="/q-and-a">Q&A</a>
-                    </li>
-
-                    <li class="mr-2 nav-item ">
-                        <a class="nav-link" href="/job">Работа</a>
-                    </li>
-
-                    <li class="nav-item  dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Автор
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink2">
-
-                            <a class="dropdown-item" href="/about">Как я стал программистом</a>
-                            <a class="dropdown-item" href="/reviews">Отзывы учеников</a>
-                            <a class="dropdown-item" href="/donate">Поддержать</a>
-                            <a class="dropdown-item" href="/contacts">Контакты</a>
-
-                        </div>
-                    </li>
-                </ul>
-
-                <!-- Right -->
-                <ul class="navbar-nav nav-flex-icons float-right">
-                    <li class=" nav-item">
-                        <a class="nav-link" href="/search?searchid=2715247&text=php&web=0"><span class="fa fa-search"></span></a>
-                    </li>
-
-                                            <li class="nav-item mr-2">
-                            <a href="/user/login" class="nav-link border border-light rounded" title="Войти">
-                                <i class="fa fa-sign-in mr-2"></i>Войти
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/user/signup" class="nav-link border border-light rounded" title="Регистрация">
-                                <i class="fa fa-user-plus"></i>
-                            </a>
-                        </li>
-                    
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-
-        </div>
-    </nav>
-    <!-- Navbar -->
-<br><br><br><br>
+    <p><img src="ccg.png" width="46" height="46" align="middle"/><mg><red><font size="5px">𒉭</font></red> <lg2><font face="eng" size="+2px">Frank BIO</font></lg2></mg></p>
 <!--<div align="center"> <img src="avatar.jpg" width="200" height="200"> </div>-->
-    <div align="center"> <img src="pic/profile.png" width="335" height="200"> </div>
+    <div align="center"> <img src="profile.png" width="335" height="200"> </div>
     <div align="center"><font color="#202020" size="+2px">• • •</font></div>
     <pre id="shadowBox" class="rainbow">
     <font face="ru">
@@ -114,14 +94,11 @@
 <red>Имя:</red> Фрэнк.
 <red>Возраст:</red> 19 лет.
 <red>Увлечения:</red> ВЕБ-Разработка.
-<red>Проекты:</red> PIDOR PASTE.
 <red>Сколько в практике:</red> -Совсем недавно, 
 пока еще зелёный.
     </font>
     </pre>
-    <table1>
-    <tr1><button1 onclick="window.location.href = 'https://t.me/H8_ME';">Связаться</button1></tr1>
-    <tr1><button1 onclick="window.location.href = 'autismhall.html';">Зал Аутизма</button1></tr1>
-    <table1>
+    <div align="right"><corner> <a href="https://t.me/H8_ME"><font face="ru" size="+1px">Связаться</font></a> </corner> </div>
+    <button onclick="window.location.href = 'autismhall.html';">Зал Аутизма</button>
     </body>
     </html>
