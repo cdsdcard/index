@@ -1,0 +1,74 @@
+    @font-face {
+    font-family:"eng";
+    src: url("fonts/xcompany.ttf") format("truetype");
+    }
+    @font-face {
+    font-family:"ru";
+    src: url("fonts/gotic_ru.ttf") format("truetype");
+    }
+    red {
+        color: #ff0000;
+    }
+    gr {
+        color: #161616;
+    }
+    }
+    pre {
+        margin-top:-15px;
+    }
+    img {
+        border-radius: 5px;
+        vertical-align: middle;
+    }
+    corner {
+            background-color: #ff0000;
+            border-radius: 2px;
+        }
+        button1 {
+            appearance: none;
+            font-family: ru;
+            color: #ff0000;
+            background-color: #202020;
+            border-radius: 2px;
+            border: 0;
+            margin: 4px;
+            padding: 4px 8px;
+            font-size: 16px;
+        }
+        button1:hover {
+        color: #161616;
+        background: #ff0000;
+        }
+        button1:focus {
+        outline: none;
+        color: #161616;
+        box-shadow: 0 0 0 1px #cbd6ee;
+        }
+        a {
+            color: #000000;
+        }
+    #shadowBox {
+  border: 0px solid;
+}
+
+.rainbow {
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
